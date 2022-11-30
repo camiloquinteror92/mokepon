@@ -1,0 +1,226 @@
+@import 'https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap';
+
+body{
+    
+    font-family:fredoka one,cursive;
+    background-image: url("./Assets/fondodg.png");
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+#seleccionar-mascota{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center
+}
+
+.titulo img{
+    width: 300px;
+    height: 150px;
+    }
+
+.subtitulo{
+    color:rgb(8, 8, 8);
+    font-size:20px
+}
+
+.tarjetas{
+    display:flex;
+    gap:10px;
+}
+
+.tarjeta-de-mokepon{
+    width: 370px;
+    height:340px;
+    padding:10px;
+    box-sizing:border-box;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff
+    
+}
+
+#goku {
+    height: 350px;
+    width: 130px;
+    position: absolute;
+}
+
+#ki {
+    height: 500px ; 
+    width: 400px;
+    opacity: 0;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+#ki:hover{
+    opacity: 1;
+    transition: all .4s ease-in-out;
+}
+#vegeta {
+    height: 350px;
+    width: 110px;
+    position: absolute;
+}
+
+#kiv {
+    height: 420px ; 
+    width: 250px;
+    opacity: 0;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#kiv:hover {
+    opacity: 1;
+    transition: all .4s ease-in-out;
+}
+
+#kif {
+    height: 500px ; 
+    width: 500px;
+    opacity: 0;
+ 
+}
+
+#kif:hover {
+    opacity: 1;
+    transition: all .4s ease-in-out;
+}
+#vegeta {
+    height: 350px;
+    width: 110px;
+}
+
+#frezza {
+    height: 350px;
+    width: 200px;
+    position: absolute;
+}
+
+.tarjeta-de-mokepon img:hover{
+    height: 380px;
+    width:190px;
+    opacity: 1;
+}
+
+.tarjeta-de-mokepon:hover{
+    background-color: #fffefe73;
+    color:black;
+}
+
+input{
+    display:none
+}
+
+input:checked + .tarjeta-de-mokepon{
+    background-color: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    color: #0D172E; 
+}
+
+input:checked + .tarjeta-de-mokepon img{
+    width: 190px;
+    opacity: 1;
+}
+
+input:checked + #ki{
+opacity: 1;
+}
+
+
+#boton-mascota {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    padding: 10px;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.281);
+    color: #040000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#boton-mascota:hover {
+    background-color: rgb(73, 157, 248);
+    color: rgb(249, 243, 243);
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 0px;
+    font-size: 15px;
+
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+}
+
+#seleccionar-ataque {
+    flex-direction:column;
+    justify-content:center;
+    align-items:center
+    
+}
+
+#gokuss {
+   margin-top: 83px;
+    height: 277px; 
+    width: 241px;
+}
+
+#vegetass {
+    height: 360px; 
+    width: 200px;
+}
+
+#freezeratck {
+    height: 360px; 
+    width: 200px;
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+}
+
+#fotos {
+    display: flex;
+    flex-direction: row;
+}
+
+.ataques-del-jugador, .ataques-del-enemigo{
+    display: flex;
+    font-size:32px;
+    justify-content: center;
+
+}
+
+#vidas-enemigo {
+    margin-left: 60px;
+}
+
+#mascota-enemigo {
+    margin-left: 50px;
+}
+
+@media (max-width: 360px){
+    .tarjetas{
+        flex-direction: column;
+    }
+
+    #fotos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #boton-mascota {
+        margin-top: 150px;
+    }
+}

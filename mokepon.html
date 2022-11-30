@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+          <!-- Este etiqueta con este atributo sirve para que reciba caracteres en español con el atributo charset
+            -->
+        <title>Dragon Ball</title>
+        <script src="./js/mokepon.js"></script>
+         <!-- Esta etiqueta sirve para llamar el codigo en JS
+            -->
+        <link rel="stylesheet" href="./styles.css"> 
+    </head>
+    <body>
+       
+        <section id="seleccionar-mascota"> 
+
+            <h1 class="titulo">
+                <img src="./Assets/Dragon_Ball_anime_logo.png" alt="Yugi OH"> 
+            </h1>
+            <h2 class="subtitulo">Elige tu guerrero:</h2>
+            
+        <div class="tarjetas">
+            
+            <input type="radio" name="mascota" id="hipodoge"/>
+            <label class="tarjeta-de-mokepon"  for="hipodoge" id="gokus">  
+                <p></p>
+                <img src="./Assets/Goku-Transparent-File.png" alt="Goku" id="goku">
+                <img src="./Assets/ki goku.png" alt="Goku" id="ki">
+                
+            </label>
+            
+          
+            <!-- Asi se comenta en HTML,este es el input name = sirve para agrupar los radio dentro de un grupo
+                y que el boton salte entre los botones del mismo grupo, Label= identifica el boton con su texto,
+                El atributo for sirve para que el texto seleccione el boton
+                type = sirve para darle el tipo de texto que se recibe a traves del input
+            -->
+           
+            <input type="radio" name="mascota" id="capipepo"/>
+            <label class="tarjeta-de-mokepon" for="capipepo">
+
+                <p></p>
+                <img src="./Assets/vegeta.png" alt="Vegeta" id="vegeta">
+                <img src="./Assets/kiv.png" alt="Kiv" id="kiv">
+            </label>
+            
+            <input type="radio" name="mascota" id="ratigueya"/>  
+            <label class="tarjeta-de-mokepon"  for="ratigueya">
+                <p></p>
+                <img src="./Assets/Freezer.png" alt="Frezzer" id="frezza">
+                <img src="./Assets/kif.png" alt="Kif" id="kif">
+            </label>
+            
+        </div>
+            <button id="boton-mascota">Seleccionar</button>
+            <!-- la etiqueta button crea un boton y el atributo id = sirve para identificar el boton
+            -->
+        </section>
+        <section id ="seleccionar-ataque">
+            <h1 class="titulo">
+            </h1>
+            
+            <h2 class="subtitulo">Elige tu ataque:</h2>
+        <section id ="fotos">
+            <div class="imagenes">
+                <img src="./Assets/kame.png" alt="gokuss" id="gokuss">
+                <button id="boton-fuego" class="boton-de-ataque"> 🉐🈴🈲🉐</button>
+            </div>
+           
+            <div class="imagenes">
+                <img src="./Assets/vegetaatack.png" alt="gokuss" id="vegetass">
+                <button id="boton-agua" class="boton-de-ataque">🈶🈹🈴🉐</button>
+            </div>
+            
+            <div class="imagenes">
+                <img src="./Assets/frezzeratack.png" alt="gokuss" id="freezeratck">
+                <button id="boton-tierra" class="boton-de-ataque">🈸🈶🉐🈵</button>
+            </div>
+        </section>
+            
+            <div id="mensajes">
+                <p id="resultado">Escoge tu ataque</p>
+                <section id="reiniciar">
+                    <button id="boton-reiniciar"> Reiniciar </button>
+                </section>
+            </div>
+
+            <section class="marcador">   
+                <div class="ataques-del-jugador">
+                    <p><span id = "vidas-jugador">3</span></p>
+                    <p><span id = "vidas-enemigo">3</span></p>
+                </div>  
+                <div class="ataques-del-enemigo">
+          
+                <!-- span sirve para poder manipular el DOM desde JS
+               -->
+               <p><span id="mascota-jugador"></span> </p>     
+               <P><span id="mascota-enemigo"></span></P>
+
+                </div>    
+            </div>      
+
+            
+          
+        </section>
+
+
+     
+    </body>    
+</html>
+ 
